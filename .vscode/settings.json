@@ -1,3 +1,10 @@
 {
-  "editor.formatOnSave": true
+  "editor.formatOnSave": true,
+  "explorer.fileNesting.enabled": true,
+  "explorer.fileNesting.patterns": {
+    "package.json": "package-lock.json, .eslint*, prettier*, tsconfig*, vite*, pnpm-lock*, bun.lockb, nest*, tslint.*, .editorconfig, next-env.d.ts, next.config.mjs, .lintstagedrc.js, .prettierignore, .prettierrc.json, jest.config.js",
+    "tailwind.config.js": "tailwind.config*, postcss.config*",
+    ".env.local": ".env*",
+    ".env": ".env*"
+  }
 }

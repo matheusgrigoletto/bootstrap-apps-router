@@ -1,0 +1,13 @@
+import { render, screen } from '@testing-library/react';
+
+import { {{pascalCase name}} } from '.';
+
+describe({{pascalCase name}}.name, () => {
+  it('should render', () => {
+    const { container } = render(<{{pascalCase name}} />);
+
+    expect(container.firstChild).toBeInTheDocument();
+
+    expect(container.firstChild).toMatchSnapshot();
+  });
+});
