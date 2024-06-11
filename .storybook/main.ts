@@ -11,6 +11,7 @@ const config = {
   staticDirs: ['../public'],
   webpackFinal: (config) => {
     config.resolve.modules.push(`${process.cwd()}/src`);
+    config.resolve.alias['@'] = `${process.cwd()}/src`;
     return config;
   },
 };
